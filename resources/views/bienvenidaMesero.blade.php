@@ -25,10 +25,6 @@
                     @endforeach
                 </div>
 
-                <a class="book-a-table-btn btn btn-primary btn-lg" style="background-color: transparent"
-                    href="{{ route('ajax') }}">
-                    <div class="bi bi-arrow-left-short" style="font-size: 15px"> REGRESAR</div>
-                </a>
 
             </div>
         </div>

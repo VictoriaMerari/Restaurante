@@ -16,6 +16,7 @@ use App\Http\Controllers\Detalles_ventaController;
 use App\Http\Controllers\CorreoController;
 use App\Http\Controllers\AjaxController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PdfController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -204,3 +205,10 @@ Route::prefix('auth')->group(function()
 //Auth::routes();
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//PDF
+Route::get('genera_pdf',[PdfController::class,'genera_pdf']);
+
+Route::get('menus_nombre/{tipo}',[PdfController::class,'menus_nombre']);
+
+Route::get('ticket/{tipo}',[PdfController::class,'ticket']);

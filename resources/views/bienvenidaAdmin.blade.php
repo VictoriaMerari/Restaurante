@@ -1,4 +1,4 @@
-@extends('template.masterCliente')
+@extends('template.masterAdmin')
 @section('contenido_central')
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us">

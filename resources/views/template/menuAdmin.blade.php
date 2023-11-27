@@ -11,16 +11,15 @@
 
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
+      <a href="{!! asset('genera_pdf')!!}" class="book-a-table-btn scrollto d-none d-lg-flex">Informe de ventas</a>
+
+      <a href="{!! route('infPersonal')!!}" class="book-a-table-btn scrollto d-none d-lg-flex">Informacion Personal</a>
       <form method="POST" action="{{ route('auth.logOut') }}">
         @csrf
         <button class="book-a-table-btn scrollto d-none d-lg-flex" style="background-color: transparent">
-
             Cerrar Sesión
         </button>
     </form>
 
     </div>
   </header><!-- End Header -->
-
-
-
